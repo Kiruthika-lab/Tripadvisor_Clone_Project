@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link rel="icon" href="tripadvisor-icon.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="sidebaroverlay"></div>
+    <nav class="navbar">
+        <div class="navbar__title"><img src="tripadvisor-icon.webp" alt="" width="40px">
+            <h1> Tripadvisor</h1>
+        </div>
+        <div class="navbar__center">
+            <p class="navbar__center1">Discover</p>
+            <p class="navbar__center2">Trips</p>
+            <p class="navbar__center3">Review</p>
+            <p class="navbar__center4">Forums</p>
+        </div>
+
+
+        <div class="navbar__right">
+            <div class="navbar__right__lan"><i class="fa-solid fa-globe" style="color: #000000;"></i>
+                <span>|</span>
+                <p>INR</p>
+            </div>
+            <div class="navbar__signin">
+                <button>sign in</button>
+            </div>
+        </div>
+
+
+        <div class="menutaggle">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <div class="profiletaggle">
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar 800px -->
+    <div class="sidenavbar800px">
+        <div class="sidenavbar800px__container">
+            <p class="sidenavbar800px__cancelbutton"><i class="fa-solid fa-xmark fa-2xl"></i></p>
+        </div>
+        <div class="sidenavbar800px__content">
+            <div class="sidenavbar__top">
+                <p><i class="fa-solid fa-globe" style="color: #000000;"></i> | INR</p>
+                <div class="sidenavbar__signin">
+                    <p id="sidenavbar__signin__p">Sign in</p>
+                </div>
+            </div>
+            <hr>
+            <p class="sidenavbar__p">Write a Review</p>
+            <p class="sidenavbar__p">Trips</p>
+            <p class="sidenavbar__p">Travellers’ Choice</p>
+            <p class="sidenavbar__p">Travel Stories</p>
+            <hr>
+            <p class="sidenavbar__p">Hotels</p>
+            <p class="sidenavbar__p">Things to Do</p>
+            <p class="sidenavbar__p">Restaurants</p>
+            <p class="sidenavbar__p">Flights</p>
+            <p class="sidenavbar__p">Holiday Homes</p>
+            <p class="sidenavbar__p">Forums</p>
+            <hr>
+            <p class="sidenavbar__p">Post photos</p>
+            <p class="sidenavbar__p">Add a place</p>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- whereto -->
+    <div class="whereto">
+        <h1 class="whereto__title">Where to?</h1>
+        <div class="whereto__content">
+
+            <p class="whereto__content__p1"><svg viewBox="0 0 24 24" width="24px" height="24px"
+                    class="d Vb egaXP UmNoP">
+                    <path
+                        d="M3 21.2h-.75v.75H3v-.75zm0-12l-.416-.624-.334.223v.4H3zm9-6l.416-.624L12 2.299l-.416.277L12 3.2zm9.01 6h.75v-.402l-.334-.222-.416.624zm0 12v.75h.75v-.75h-.75zm-17.26 0v-12h-1.5v12h1.5zM3.416 9.824l9-6-.832-1.248-9 6 .832 1.248zm8.168-6l9.01 6 .832-1.248-9.01-6-.832 1.248zM20.26 9.2v12h1.5v-12h-1.5zm.75 11.25H3v1.5h18.01v-1.5z">
+                    </path>
+                </svg> Search All</p>
+
+            <p class="whereto__content__p"><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.252 5.405c0-.47.38-.85.85-.85h15.624c.47 0 .85.38.85.85v6.649c.68.562 1.22 1.393 1.22 2.544v4.847h-1.5V17.77H3.704v1.674h-1.5V14.57c.025-.654.304-1.588 1.05-2.35V5.404zm2.635 5.587a6.6 6.6 0 01.836-.052h3.896c-.502-.482-1.31-.93-2.433-.93-1.09 0-1.83.466-2.3.982zm7.389-.052h4.468l.036.004a5.2 5.2 0 01.537.082 2.351 2.351 0 00-.222-.233c-.447-.41-1.18-.783-2.254-.783-1.078 0-1.75.273-2.18.584a2.396 2.396 0 00-.385.346zm5.8-1.282c-.726-.652-1.812-1.148-3.235-1.148-1.347 0-2.338.347-3.06.868-.342.247-.61.525-.821.802-.736-.861-2.005-1.67-3.774-1.67-1.629 0-2.733.712-3.434 1.503V6.055h14.324v3.603zM3.703 16.27h16.594v-1.673c0-.703-.355-1.188-.888-1.545-.56-.374-1.263-.561-1.74-.613H6.724c-1.118 0-1.81.317-2.237.678-.57.482-.765 1.123-.783 1.496v1.657z">
+                    </path>
+                </svg>Hotels</p>
+            <p class="whereto__content__p"><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.25 5.25h19.5v4.454l-.536.16a2.752 2.752 0 000 5.272l.536.16v4.454H2.25v-4.454l.536-.16a2.752 2.752 0 000-5.272l-.536-.16V5.25zm1.5 1.5v1.876a4.25 4.25 0 010 7.748v1.876h16.5v-1.876a4.25 4.25 0 010-7.748V6.75H3.75z">
+                    </path>
+                    <path
+                        d="M12 15a1 1 0 110 2 1 1 0 010-2zM12 11.5a1 1 0 110 2 1 1 0 010-2zM12 8a1 1 0 110 2 1 1 0 010-2z">
+                    </path>
+                </svg>Things to Do</p>
+            <p class="whereto__content__p"><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.578 4.891L16.25 2.22l1.06 1.06-2.671 2.672c-.679.679-1.055 1.462-1.12 2.199-.043.5.054 1.003.327 1.472L18.75 4.72l1.06 1.06-4.906 4.906c.473.281.974.387 1.466.354.718-.047 1.467-.394 2.096-1.023A869.223 869.223 0 0021.02 7.45l.226-.228h.001l1.066 1.055-.227.23a983.524 983.524 0 01-2.56 2.57c-.849.849-1.927 1.384-3.057 1.459a4.026 4.026 0 01-2.647-.768L12.591 13l7.72 7.72-1.061 1.06-5.97-5.97-3 3-1.75-1.75-4.72 4.72-1.06-1.06L7.47 16 3.077 11.61a4.75 4.75 0 010-6.718l.702-.702 7.75 7.75 1.232-1.232a3.971 3.971 0 01-.737-2.686c.1-1.147.67-2.246 1.553-3.13zm-1.359 9.86L3.808 6.338a3.25 3.25 0 00.33 4.21l6.142 6.14 1.94-1.939z">
+                    </path>
+                </svg>Restaurants</p>
+
+            <p class="whereto__content__p"><i class="fa-solid fa-plane-departure"></i> Flights</p>
+
+            <p class="whereto__content__p"><svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP">
+                    <path
+                        d="M3 21.2h-.75v.75H3v-.75zm0-12l-.416-.624-.334.223V9.2H3zm9-6l.416-.624L12 2.299l-.416.277L12 3.2zm9.01 6h.75v-.402l-.334-.222-.416.624zm0 12v.75h.75v-.75h-.75zm-17.26 0v-12h-1.5v12h1.5zM3.416 9.824l9-6-.832-1.248-9 6 .832 1.248zm8.168-6l9.01 6 .832-1.248-9.01-6-.832 1.248zM20.26 9.2v12h1.5v-12h-1.5zm.75 11.25H3v1.5h18.01v-1.5zM18 12.96h-6.99v1.5H18v-1.5zm-7.74.75c0 .69-.56 1.25-1.25 1.25v1.5a2.75 2.75 0 002.75-2.75h-1.5zm-1.25 1.25c-.69 0-1.25-.56-1.25-1.25h-1.5a2.75 2.75 0 002.75 2.75v-1.5zm-1.25-1.25c0-.69.56-1.25 1.25-1.25v-1.5a2.75 2.75 0 00-2.75 2.75h1.5zm1.25-1.25c.69 0 1.25.56 1.25 1.25h1.5a2.75 2.75 0 00-2.75-2.75v1.5zm5.24 1.25v3h1.5v-3h-1.5z">
+                    </path>
+                </svg>Holiday Homes</p>
+        </div>
+
+    </div>
+
+    <!-- searchbar -->
+    <div class="searchcenter">
+        <div class="whereto__searchbar">
+            <div class="whereto__searchbar__left">
+                <svg viewBox="0 0 24 24" width="25px" height="25px" class="d Vb UmNoP">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.74 3.75a5.99 5.99 0 100 11.98 5.99 5.99 0 000-11.98zM2.25 9.74a7.49 7.49 0 1113.3 4.728l5.44 5.442-1.06 1.06-5.44-5.439A7.49 7.49 0 012.25 9.74z">
+                    </path>
+                </svg>
+                <input type="search" placeholder="Place to go, things to do, hotels...">
+            </div>
+            <p>Search</p>
+        </div>
+    </div>
+    <!-- titleimg -->
+    <div class="titleimg">
+        <img src="img/home-gai-entry-dv.png" width="100%">
+        <div class="titleimg__content">
+            <div class="titleimg__content__s1">
+                <p class="titleimg__content__s1__sfont">Powered by AI
+                <h5 class="titleimg__content__s1__beta">BETA</h5>
+            </div>
+            <div>
+                <h1 class="titleimg__content__s2">Get custom recs for your next trip</h1>
+            </div>
+            <div>
+                <p class="titleimg__content__s3">Find great eats, experiences, and more—inspired by things you love.</p>
+            </div>
+            <div class="titleimg__content__button">
+                <p><i class="fa-solid fa-location-dot" style="color: #fafafa;"></i></p>
+                <p class="titleimg__content__button__font">Start a Trip with AI</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- staysomewhere -->
+    <div class="section1">
+        <div class="staysomewhere">
+            <div class="staysomewhere__title">
+                <h2>Explore top-rated destinations</h2>
+                <p>2025’s Travellers’ Choice Awards Best of the Best Destinations</p>
+            </div>
+            <div class="staysomewhere__img">
+                <div class="relative">
+                    <img src="img/smw1.jpg" width="250px" alt="">
+                    <h2 class="absoltive">Top Destinations</h2>
+                </div>
+                <div class="relative">
+                    <img src="img/smw2.jpg" width="250px" alt="">
+                    <h2 class="absoltive">Trending Destinations</h2>
+                </div>
+                <div class="relative">
+                    <img src="img/smw3.jpg" width="250px" height="250px" alt="">
+                    <h2 class="absoltive">Food Desinations</h2>
+                </div>
+                <div class="relative">
+                    <img src="img/smw4.jpg" width="250px" alt="">
+                    <h2 class="absoltive">Culture Destinations</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Get inspired by our fave travel creators -->
+    <div class="section2">
+        <h2>Get inspired by our fave travel creators</h2>
+        <p class="section2__desc">Tried-and-true guidance to fuel your next big trip</p>
+        <div class="section2__images">
+            <div class="sec2__img">
+                <img src="./img/section2_img1.jpg">
+                <h4><span>By<a href="#"> Ashlyn S </a></h4>
+                <h4><a href="#">3 family-friendly days in Rome</a></h4>
+                <div class="sec__img--desc">
+                    <p>❤️</p>
+                    <P>30 items</P>
+                </div>
+            </div>
+            <div class="sec2__img">
+                <img src="./img/section2_img2.jpg">
+                <h4><span>By<a href="#"> Eileen Ivette</a></h4>
+                <h4><a href="#">The ultimate 'workcation' in Mexico City</a> </h4>
+
+                <div class="sec__img--desc">
+                    <p>❤️</p>
+                    <P>28 items</P>
+                </div>
+            </div>
+            <div class="sec2__img">
+                <img src="./img/section2_img3.jpg">
+                <h4>By<a href="#"> Two Bad Tourists</a></h4>
+                <h4><a href="#">Exploring LGBTQ+-friendly Barcelona</a></h4>
+                <div class="sec__img--desc">
+                    <p>❤️</p>
+                    <P>29 items</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top experiences on Tripadvisor -->
+    <div class="Waystoyour">
+        <div>
+            <h2 class="section3">Top experiences on Tripadvisor</h2>
+            <p class="section3__desc">The best tours, activities and tickets</p>
+        </div>
+        <div class="Waystoyour__img">
+            <div class="Waystoyour__img__and__p">
+                <img src="img/waysur1.jpg" width="250" height="250">
+                <div class="hearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                <p class="bestseller">Best Seller</p>
+                <p class="Waystoyour__p">Half-Day Railway Market and Floating Market Tour in Thailand</p>
+
+                <div class="Waystoyour__rating">
+                    <p>🟢🟢🟢🟢</p>
+                    <span>3,194</span>
+
+                </div>
+
+                <p class="Waystoyour__prize">from ₹2,643 per adult</p>
+
+            </div>
+
+            <div class="Waystoyour__img__and__p">
+                <img src="img/waysur2.jpg" width="250" height="250" alt="">
+                <div class="hearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                <p class="Waystoyour__p">Fontainhas Heritage Walk by Make It Happen</p>
+
+                <div class="Waystoyour__rating">
+                    <p>🟢🟢🟢🟢</p>
+                    <span>2,565</span>
+                </div>
+
+                <p class="Waystoyour__prize">from ₹1,000 per adult</p>
+
+
+            </div>
+
+            <div class="Waystoyour__img__and__p">
+                <img src="img/waysur3.jpg" width="250" height="250" alt="">
+                <div class="hearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                <p class="Waystoyour__p">Ninh Binh Full-Day Tour from Hanoi to Hoa Lu, Tam Coc & Mua Cave Via Boat &
+                    Bike</p>
+
+                <div class="Waystoyour__rating">
+                    <p>🟢🟢🟢🟢</p>
+                    <span>3,501</span>
+                </div>
+
+                <p class="Waystoyour__prize">from ₹4,862 per adult</p>
+            </div>
+
+            <div class="Waystoyour__img__and__p">
+                <img src="img/waysur4.jpg" width="250" height="250" alt="">
+                <div class="hearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                <p class="Waystoyour__p">Cu Chi Tunnels and Mekong Delta Full Day Tour</p>
+
+                <div class="Waystoyour__rating">
+                    <p>🟢🟢🟢🟢</p>
+                    <span>4,790</span>
+                </div>
+
+                <p class="Waystoyour__prize">from ₹4,950 per adult</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- most to explore -->
+    <div class="mostexplore">
+        <div class="Moretoexplore__1">
+            <div class="mostexplore__title">
+                <h2>More to explore</h2>
+            </div>
+
+            <div class="mostexplore__container">
+                <div class="mostexplore__container__card">
+                    <img src="img/most1.jpg" width="350px" height="250px">
+                    <div class="mhearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                    <p><a href="#"> 7 Bangkok hotels that highlight Thailand's spectacular architecture</a></p>
+                </div>
+
+                <div class="mostexplore__container__card">
+                    <img src="img/most2.jpg" width="350px" height="250px">
+                    <div class="mhearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                    <p><a href="#">3 days in Tokyo: The perfect itinerary</a>/p>
+                </div>
+
+                <div class="mostexplore__container__card">
+
+                    <img src="img/most3.jpg" width="350px" height="250px">
+                    <div class="mhearticon"><i class="fa-regular fa-heart fa-lg"></i></div>
+                    <p><a href="#">Where Bali’s best chefs go on their days off</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dream Your Next Trip -->
+    <div class="dreamtrip">
+        <div class="dreamtrip__plan">
+            <div class="dreamtrip__title">
+                <h2>Dream Your Next Trip</h2>
+                <p>Weekend getaways from Salem</p>
+
+            </div>
+            <div class="dreamtrip__img">
+                <div class="dreamtrip__relative">
+                    <img src="img/drm1.jpg" width="270px" alt="">
+                    <h2 class="dreamtrip__absoltive">Chennai (Madras), India</h2>
+                </div>
+                <div class="dreamtrip__relative">
+                    <img src="img/drm2.jpg" width="270px" alt="">
+                    <h2 class="dreamtrip__absoltive">Coimbatore, India</h2>
+                </div>
+                <div class="dreamtrip__relative">
+                    <img src="img/drm3.jpg" width="270px" height="250px" alt="">
+                    <h2 class="dreamtrip__absoltive">Ooty (Udhagamandalam), India</h2>
+                </div>
+                <div class="dreamtrip__relative">
+                    <img src="img/drm4.jpg" width="270px" alt="">
+                    <h2 class="dreamtrip__absoltive">Madurai, India</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Top destinations for your next holiday -->
+    <div class="topdestination">
+        <div class="topdestination__plan">
+            <div class="topdestination__title">
+                <h2>Top destinations for your next holiday</h2>
+                <p>Here's where your fellow travellers are headed</p>
+
+            </div>
+            <div class="topdestination__img">
+                <div class="topdestination__relative">
+                    <img src="img/td1.jpg" width="270px" alt="">
+                    <h2 class="topdestination__absoltive">Bangkok, Thailand</h2>
+                </div>
+                <div class="topdestination__relative">
+                    <img src="img/td2.jpg" width="270px" alt="">
+                    <h2 class="topdestination__absoltive">Singapore, Singapore</h2>
+                </div>
+                <div class="topdestination__relative">
+                    <img src="img/td3.jpg" width="270px" height="250px" alt="">
+                    <h2 class="topdestination__absoltive">Mumbai, India</h2>
+                </div>
+                <div class="topdestination__relative">
+                    <img src="img/td4.jpg" width="270px" alt="">
+                    <h2 class="topdestination__absoltive">Bali, Indonesia</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- banner2 -->
+
+    <div class="banner2">
+        <div class="banner2__container">
+            <div class="banner2__img">
+
+            </div>
+            <div class="banner2__info">
+                <p><img style="width: 15%;height: 40px;" src="./img/tripadvisor-icon.png"> Sponsored by Wanderlab</p>
+                <h2>Watch The Wanderer</h2>
+                <p>Tripadvisor’s award-winning travel series, now<br> streaming on Amazon Prime Video
+                </p><button>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Rentals Near You -->
+    <!-- card6 -->
+    <div class="cardInfo6">
+
+        <div class="cardContainer6">
+            <div class="cardCont__header6">
+                <h2>Home Rentals Near You</h2>
+            </div>
+            <div class="card6">
+                <div class="card6__container myinfoc6">
+                    <div class="card6__info ">
+                        <p>We think you'd enjoy these homes for a quick trip out of town.</p>
+                    </div>
+                </div>
+                <div class="card6__container">
+                    <div class="card6__img">
+                        <div class="card6__overlay"></div>
+                    </div>
+                    <div class="card6__info">
+                        <a href="#">Rentals in bangaluru</a><a href="#">9 rentals</a>
+                    </div>
+                </div>
+                <div class="card6__container">
+                    <div class="card6__img mycard6img2">
+                        <div class="card6__overlay"></div>
+                    </div>
+                    <div class="card6__info">
+                        <a href="#">Rentals in Dindigul</a><a href="#">8 rentals</a>
+                    </div>
+                </div>
+                <div class="card6__container">
+                    <div class="card6__img mycard6img3">
+                        <div class="card6__overlay"></div>
+                    </div>
+                    <div class="card6__info">
+                        <a href="#">Rentals in Kanathalloor</a><a href="#">119 rentals</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner 3 -->
+
+    <div class="banner3">
+        <div class="banner3__info"><img src="./img/icon2.png" style="margin-left: 80px;">
+            <h2>Travellers' Choice Awards Best of the Best</h2>
+            <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p><button>See the
+                winners</button>
+        </div>
+        <div class="banner3__img"></div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-desc">
+            <div class="footer__sec1">
+                <div class="footer__sec1--desc">
+                    <div class="footer__sec1--desc1">
+                        <h3>About Tripadvisor</h3>
+                        <p>About us</p>
+                        <p>Press</p>
+                        <p>Resources and policies</p>
+                        <p>Careers</p>
+                        <p>Trust & safety</p>
+                        <p>Contact us</p>
+                        <p>Accessibility Statement</p>
+                    </div>
+                    <div class="footer__sec1--desc2">
+                        <h3>Explore</h3>
+                        <p>Write a review</p>
+                        <p>Add a place</p>
+                        <p>Join</p>
+                        <p>Traveller's Choice</p>
+                        <p>GreenLeaders</p>
+                        <p>Help Centre</p>
+                        <p>Travel Articles</p>
+                    </div>
+                    <div class="footer__sec1--desc2">
+                        <h3>Do Business with us</h3>
+                        <p>Owners & DMO/CVB</p>
+                        <p>Business Advantage</p>
+                        <p>Sponsored Placements</p>
+                        <p>Access our Content API</p>
+                        <h3>Get The App</h3>
+                        <p>iPhone App</p>
+                        <p>Android App</p>
+                    </div>
+                </div>
+                <div class="footer__sec1--foot">
+                    <div class="footer__sec1--foot1">
+                        <img src="./img/tripadvisor-icon.webp">
+                        <div class="footcontent">
+                            <p class="rights"> &copy;2025 Tripadvisor LLC All rights reserved</p>
+                            <div class="listOfContents">
+                                <p>Terms of Use</p>
+                                <p>Privacy and Cookies Statement</p>
+                                <p>Cookie consent</p>
+                                <p>Site Map</p>
+                                <p>How the site works</p>
+                                <p>Contact us</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer__sec2">
+                <div class="footer__sec2--desc">
+                    <h3>Tripadvisor Sites</h3>
+                    <p>Book tours and attraction tickets on Viator</p>
+                </div>
+                <div class="footer__sec2--drop">
+                    <select>
+                        <option> $U.S.Dollars</option>
+                        <option>£ British Pounds</option>
+                        <option> € Euros</option>
+                        <option> CA$ Canadian Dollars</option>
+                        <option> CHF Swiss Francs</option>
+                        <option> A$ Australian Dollars</option>
+                        <option> JP¥ Japanese Yen</option>
+                        <option> CN¥ Chinese Yuan</option>
+                        <option> ₹ Indian Rupees</option>
+                        <option> R$ Brazilian Real</option>
+                        <option> HK$ Hong Kong Dollars</option>
+                        <option> RUB Russian Rubles</option>
+                        <option> SEK Swedish Krona</option>
+                        <option> TRY Turkish Lira</option>
+                        <option> DKK Danish Krone</option>
+                        <option> MX$ Mexican Peso</option>
+                        <option> NT$ New Taiwan Dollars</option>
+                        <option> NOK Norwegian Krone</option>
+                        <option> PLN Polish Zloty</option>
+                        <option> AED UAE Dirham</option>
+                        <option> AFN Afghan Afghanis</option>
+                        <option> ALL Albanian Lek</option>
+                        <option> AMD Armenian Dram</option>
+                        <option> ANG Netherlands Antillian Guilders</option>
+                        <option> AOA Angolan Kwanza</option>
+                        <option> ARS Argentine Peso</option>
+                        <option> AWG Aruban Guilders</option>
+                        <option> AZN Azerbaijanian Manat</option>
+                        <option> BAM Bosnia and Herzegovina Convertible Marks</option>
+                        <option> BBD Barbados Dollars</option>
+                        <option> BDT Bangladeshi Taka</option>
+                        <option> BGN Bulgarian Lev</option>
+                        <option> BHD Bahraini Dinar</option>
+                        <option> BIF Burundi Francs</option>
+                        <option> BMD Bermudian Dollars</option>
+                        <option> BND Brunei Dollars</option>
+                        <option> BOB Bolivian Boliviano</option>
+                        <option> BSD Bahamian Dollars</option>
+                        <option> BTN Bhutanese Ngultrum</option>
+                        <option> BWP Botswana Pula</option>
+                        <option> BZD Belize Dollars</option>
+                        <option> CDF Congolese Francs</option>
+                        <option> CLP Chilean Peso</option>
+                        <option> COP Colombian Peso</option>
+                        <option> CRC Costa Rican Colon</option>
+                        <option> CVE Cape Verde Escudo</option>
+                        <option> CZK Czech Koruna</option>
+                        <option> DJF Djibouti Francs</option>
+                        <option> DOP Dominican Peso</option>
+                        <option> DZD Algerian Dinar</option>
+                        <option> EGP Egyptian Pounds</option>
+                        <option> ERN Eritrean Nakfa</option>
+                        <option> ETB Ethiopian Birr</option>
+                        <option> FJD Fiji Dollars</option>
+                        <option> FKP Falkland Islands Pounds</option>
+                        <option> GEL Georgian Lari</option>
+                        <option> GHS Ghanan Cedi</option>
+                        <option> GIP Gibraltar Pounds</option>
+                        <option> GMD Gambian Dalasi</option>
+                        <option> GNF Guinea Francs</option>
+                        <option> GTQ Guatemalan Quetzal</option>
+                        <option> GYD Guyana Dollars</option>
+                        <option> HNL Honduran Lempiras</option>
+                        <option> HRK Croatian Kuna</option>
+                        <option> HTG Haitian Gourdes</option>
+                        <option> HUF Hungarian Forint</option>
+                        <option> IDR Indonesian Rupiah</option>
+                        <option> ₪ New Israeli Sheqel</option>
+                        <option> IQD Iraqi Dinar</option>
+                        <option> IRR Iranian Rial</option>
+                        <option> ISK Icelandic Kronur</option>
+                        <option> JMD Jamaican Dollars</option>
+                        <option> JOD Jordanian Dinar</option>
+                        <option> KES Kenyan Shilling</option>
+                        <option> KGS Kyrgyzstani Som</option>
+                        <option> KHR Cambodian Riel</option>
+                        <option> KMF Comoro Francs</option>
+                        <option> ₩ South Korean Won</option>
+                        <option> KWD Kuwaiti Dinar</option>
+                        <option> KYD Cayman Islands Dollars</option>
+                        <option> KZT Kazakhstani Tenge</option>
+                        <option> LAK Lao Kip</option>
+                        <option> LBP Lebanese Pounds</option>
+                        <option> LKR Sri Lanka Rupees</option>
+                        <option> LRD Liberian Dollars</option>
+                        <option> LYD Libyan Dinar</option>
+                        <option> MAD Moroccan Dirham</option>
+                        <option> MDL Moldovan Leu</option>
+                        <option> MGA Malagasy Ariary</option>
+                        <option> MKD Macedonian Denar</option>
+                        <option> MNT Mongolian Tugrik</option>
+                        <option> MOP Macanese Pataca</option>
+                        <option> MUR Mauritius Rupees</option>
+                        <option> MVR Maldivian Rufiyaa</option>
+                        <option> MWK Malawian Kwacha</option>
+                        <option> MZN Mozambican Metical</option>
+                        <option> NAD Namibian Dollars</option>
+                        <option> NGN Nigerian Naira</option>
+                        <option> NIO Nicaraguan Cordoba Oro</option>
+                        <option> NPR Nepalese Rupees</option>
+                        <option> NZ$ New Zealand Dollars</option>
+                        <option> OMR Rial Omani</option>
+                        <option> PAB Panamanian Balboa</option>
+                        <option> PEN Peruvian Nuevos Soles</option>
+                        <option> PGK Papua New Guinean Kina</option>
+                        <option> ₱ Philippine Peso</option>
+                        <option> PKR Pakistan Rupees</option>
+                        <option> PYG Paraguayan Guarani</option>
+                        <option> QAR Qatari Rial</option>
+                        <option> RON Romanian New Leu</option>
+                        <option> RSD Serbian Dinar</option>
+                        <option> RWF Rwandan Francs</option>
+                        <option> SAR Saudi Riyal</option>
+                        <option> SBD Solomon Islands Dollars</option>
+                        <option> SCR Seychelles Rupees</option>
+                        <option> SGD Singapore Dollars</option>
+                        <option> SHP Saint Helena Pounds</option>
+                        <option> SLL Sierra Leonean Leone</option>
+                        <option> SOS Somali Shilling</option>
+                        <option> SRD Surinam Dollars</option>
+                        <option> STD Sao Tome and Principe Dobra</option>
+                        <option> THB Thai Baht</option>
+                        <option> TJS Tajikistani Somoni</option>
+                        <option> TMT Turkmenistan Manat</option>
+                        <option> TND Tunisian Dinar</option>
+                        <option> TOP Tongan Pa'anga</option>
+                        <option> TTD Trinidad and Tobago Dollars</option>
+                        <option> TZS Tanzanian Shilling</option>
+                        <option> UAH Ukrainian Hryvnia</option>
+                        <option> UGX Uganda Shilling</option>
+                        <option> UYU Uruguayan Peso</option>
+                        <option> UZS Uzbekistan Sum</option>
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> VUV Vanuatu Vatu</option>
+
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> WST Samoan Tala</option>
+
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> FCFA CFA Francs BEAC</option>
+
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> EC$ East Caribbean Dollars</option>
+
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> F CFA CFA Francs BCEAO</option>
+
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> ₫ Vietnamese Dong</option>
+                        <option> CFPF CFP Francs</option>
+                        <option> YER Yemeni Rial</option>
+                        <option>ZAR South African Rand</option>
+                        <option> KPW North Korean won</option>
+                        <option> MMK Burmese kyat</option>
+                        <option> SDG Sudanese pound</option>
+                        <option> SYP Syrian pound</option>
+                        <option> BYN Belarussian Rubles</option>
+                    </select>
+                    <select>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>Europe</option>
+                    </select>
+                </div>
+                <div class="footer__sec2--apps">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-x-twitter fa-xl"></i>
+                    <i class="fa-brands fa-pinterest fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+        </div>
+        <p class="footer-end1">This is the version of our website addressed to speakers of English in India. If you are
+            a
+            resident of another country or region, please select the appropriate version of Tripadvisor for
+            your country or region in the drop-down menu.<button>more</button></p>
+        <p class="footer-end2">Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites
+            and
+            applications. Listed prices may require a stay of a particular length or have blackout dates,
+            qualifications or other applicable restrictions. Tripadvisor LLC is not responsible for any
+            content on external web sites that are not owned or operated by Tripadvisor .</p>
+        <p class="footer-end2">Tripadvisor LLC is not a booking agent or tour operator. When you book with one of our
+            partners,
+            please be sure to check their site for a full disclosure of all applicable fees</p>
+    </div>
+
+</body>
+
+</html>
